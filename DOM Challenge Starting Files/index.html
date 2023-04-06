@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+    
+
+  </head>
+  <body>
+
+    <h1>Hello</h1>
+
+    <input type="checkbox">
+
+    <button style=":active color:red;">Click Me</button>
+
+    <ul>
+      <li class="list">
+        <a href="https://www.google.com">Google</a>
+      </li>
+      <li class="list">Second</li>
+      <li class="list">Third</li>
+    </ul>
+
+    <div class="col-md-4">
+      <script src="index.js"></script>
+      <label for="inputsemester4" class="form-label">Select Semester</label>
+      <select class="form-select form-select-md" 
+        aria-label=".form-select-sm example" 
+        id = "inputsemester4" 
+        onchange ="selectSem()">
+
+        <option value="0" >---</option>
+        <option value="1">I</option>
+        <option value="2">II</option>
+        <option value="3" >III</option>
+        <option value="4" >IV</option>
+
+        
+        
+      </select>
+    </div>
+    <div class="col-md-4">
+      <label for="inputsubject" class="form-label">Select Subject</label>
+      <select class="form-select form-select-md" 
+      aria-label=".form-select-sm example" 
+      id="inputsubject">
+        <option class = "inputsubjects" selected>--</option>
+        
+      </select>
+    </div>
+    <div class="col-md-4">
+      <label for="inputcomponent" 
+        class="form-label">Select Component</label>
+      <select class="form-select form-select-md" 
+      aria-label=".form-select-sm example" 
+      id="inputcomponent" onchange="assignBatch()">
+        <option>---</option>
+        <option>Theory</option>
+        <option value="1">Lab</option>                      
+      </select>
+    </div>
+    <div class="col-md-4">
+      <label for="inputdivision" 
+      class="form-label">Select Division</label>
+      <select class="form-select form-select-md" 
+      aria-label=".form-select-sm example" 
+      id="inputdivision"
+      onchange="assignBatch()"
+      >
+      <option selected>---</option>
+        <option>G</option>
+        <option>H</option>
+        
+      </select>
+    </div>
+    <div class="col-md-4">
+      <label for="inputbatch" 
+      class="form-label">Select Batch</label>
+      <select class="form-select form-select-md" 
+      aria-label=".form-select-sm example" 
+      id="inputbatch">
+        <option selected>---</option>
+        
+      </select>
+    </div>
+
+    <div class="col-md-4">
+      <label for="inputbatch" 
+      class="form-label">Select TimeSlot</label>
+      <select class="form-select form-select-md" 
+      aria-label=".form-select-sm example" 
+      id="inputbatch">
+        <option selected>---</option>
+        <option value="1">10:30-11:30</option>
+        <option value="2">10:30-11:301</option>
+        <option value="3">10:30-11:30</option>
+      </select>
+    </div>                  
+    </div>                  
+  </div> <!--form 1 end-->
+
+  <br>
+   <!--form 2 started --> 
+<div class="scroller border" id="abc"> 
+    <legend>
+      Students List
+
+    </legend>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" 
+    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" 
+    crossorigin="anonymous"></script>
+    
+    
+  </body>
+
+</html>
